@@ -8,7 +8,7 @@
 #Payload: 127.0.0.1;cat /etc/passwd
 
 if(isset($_POST['ip'])){
-    #Insecure Implementation
+    #Insecure Implementations
     echo passthru('ping -c 1 '.$_POST['ip']);
 
     /*Secure Implementation
